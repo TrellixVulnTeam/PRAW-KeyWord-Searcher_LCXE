@@ -19,7 +19,7 @@ while True:
     try:
         time.sleep(timer)
         for submission in new_bpc:
-            if ('LG' in submission.title or '[Restock]' in submission.title) and (submission.title is not current):
+            if ('RTX' in submission.title or '[Restock]' in submission.title) and (submission.title is not current):
                 current = submission.title
                 my_gpu_sub.reply('An RTX Card/Restock has been mentioned: ' + submission.url)
         timer = .5
